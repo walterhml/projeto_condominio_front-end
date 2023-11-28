@@ -1,0 +1,1618 @@
+
+
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Anton&family=Archivo+Black&family=Noto+Sans:ital,wght@1,100&family=Rammetto+One&family=VT323&display=swap');
+
+
+
+
+/* Reset de estilos para todos os elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+/* Estilos padrão para o cabeçalho */
+header {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  background: #88d6f1;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+
+#hmenu {
+  
+  transform: translateX(-50px);
+}
+
+.hcadeado {
+  height: 50px;
+  margin-left: 1205px;
+  transform: translateX(85px);
+  margin-right: 85px;
+}
+
+.h_a {
+  font-size: 30px;
+}
+
+ul {
+  align-items: center;
+  list-style-type: none;
+
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border-radius: 8px;
+  padding: 50px;
+}
+
+
+
+.dropdown {
+  /* border-bottom: 2px solid #333; */
+  display: inline-block;
+
+}
+
+.testes {
+  margin: auto;
+  display: flex;
+  border-bottom: 2px solid #333;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #88d6f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+/* Final Cabeçalho */
+
+
+
+/* Inicio para a página Home */
+.h_foto {
+  width: 100%;
+  height: 350px;
+}
+
+.hfoto,
+.hfototerc {
+  /* position: fixed; */
+  width: 100%;
+  height: 350px;
+  margin-bottom: 5%;
+  border-radius: 50px;
+  box-shadow: 0 0.3561rem 0.3561rem #969696c6;
+  
+}
+
+.hsegundas {
+  justify-content: center;
+  margin: 4%;
+  display: flex;
+}
+
+.hterceiras {
+  justify-content: center;
+  margin: 4%;
+  display: flex;
+}
+
+
+
+
+.htexto,
+.hbanner {
+  width: 100%;
+}
+
+/* Estilos responsivos para a página Home */
+@media screen and (min-width: 600px) {
+
+  .hfoto,
+  .hfototerc,
+  .htexto,
+  .htx,
+  .h_t,
+  .hbanner {
+    width: 48%;
+    margin: 2%;
+  }
+
+  .hsegundas,
+  .hterceiras {
+    margin: 2%;
+  }
+}
+
+.hcontainer00 {
+  border: solid 0.3rem rgba(5, 211, 248, 0.5);
+  box-shadow: inset 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+}
+
+.htitulo_destaque {
+  font-family: 'Archivo Black', sans-serif;
+  margin-top: 5%;
+  font-size: 50px;
+  text-align: center;
+}
+
+.h_titulo {
+  font-family: 'Archivo Black', sans-serif;
+  text-align: center;
+  font-size: 35px;
+}
+
+.h_t {
+  font-family: 'Archivo Black', sans-serif;
+  text-align: center;
+  font-size: 35px;
+}
+
+.hcaixa {
+  padding: 2%;
+  width: 90%;
+  max-width: 1200px;
+  height: 33.8rem;
+  background-color: rgba(186, 234, 243, 0.5199999809);
+  margin: 0 auto;
+}
+
+.hcaixa p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  margin-top: 9%;
+  font-size: 20px;
+}
+
+.htexto {
+  padding: 2%;
+  border: none;
+  box-shadow: 0 0.3561rem 0.3561rem #85e6c0;
+  background-color: white;
+}
+
+.htx{
+  padding: 2%;
+  border: none;
+  box-shadow: 0 0.3561rem 0.3561rem #85e6c0;
+  background-color: white;
+  margin-left: 130px;
+}
+
+
+
+
+
+
+.htexto p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  text-align: justify;
+}
+.htx p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.h_destaque {
+  background-image: url(../image/-6KU.png);
+  height: 88vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.h_btn {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  color: rgb(6, 200, 6);
+}
+
+.h_btn::after {
+  font-size: 40px;
+  font-weight: bold;
+  background-color: #eee;
+  transition: margin-top 250ms;
+}
+
+.h_btn:hover::after {
+  margin-top: -8px;
+  background-color: #eee;
+}
+
+/* INICIO CARROSEL */
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  border-radius: 30px;
+}
+.slideshow-container2 {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  border-radius: 30px;
+  margin-left: -1px;
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+/* FINAL CARROSEL */
+
+/* Estilos responsivos para telas maiores na página Home */
+@media screen and (min-width: 800px) {
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+}
+/* Final para a página Home */
+
+
+
+/* Estilos para o footer */
+footer {
+  background: #05D3F8;
+  width: 100%;
+}
+
+.footerPrinc {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  padding: 10px;
+  gap: 25px;
+}
+
+.footer_ender {
+  padding: 5px;
+}
+
+.footer_caixa {
+  background: #087A8F;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+
+.footer_text2 {
+  width: 700px;
+  color: #FEF9F9;
+  text-align: center;
+  font-family: Switzerland;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 20px;
+  word-spacing: 10px;
+}
+
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #007bff;
+  /* Cor de fundo do botão */
+  color: #fff;
+  /* Cor do ícone */
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #0056b3;
+  /* Cor de fundo do botão ao passar o mouse */
+}
+
+.image_logo_mapa {
+  border-radius: 50px;
+}
+
+/* Adicione estilos para o ícone conforme necessário */
+
+/* FINAL PAGINHA HOME */
+
+
+
+/* INICIO PAGINHA GESTÃO */
+
+.Gcaixa {
+  width: 30%;
+  height: 75px;
+  background-color: rgb(42, 218, 15);
+  text-align: center;
+  padding-top: 15px;
+  font-size: 24px;
+  margin-top: 150px;
+  background-image: linear-gradient(rgba(42, 243, 7, 0.982), rgba(220, 242, 248, 0.993)), url('imagem.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 3%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border: 2px solid rgba(42, 243, 7, 0.982);
+  box-shadow: 4px 2px 8px rgba(6, 229, 159, 0.993);
+
+}
+
+/* Configurando a Foto do Síndico */
+.GfotoSindico {
+
+  margin-left: 43%;
+  border-radius: 5px;
+  display: flexbox;
+  margin-top: -10px;
+  
+}
+
+/* Configurando Titulo do Sindico Geral */
+
+.GsindicoGeral {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  margin-bottom: -8px;
+  margin-left: 73%;
+  margin-top: -190px;
+}
+
+
+/* configurando Caixa do Sindico Geral - Nome e contato */
+
+.GsindicoNomeContato {
+  width: 30%;
+  height: 75px;
+  background-color: rgb(42, 218, 15);
+  text-align: center;
+  padding-top: 15px;
+  font-size: 24px;
+  margin-top: 40px;
+  margin-left: 950px;
+  background-image: linear-gradient(rgba(42, 243, 7, 0.982), rgba(220, 242, 248, 0.993)), url('imagem.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border: 2px solid rgba(42, 243, 7, 0.982);
+  box-shadow: 4px 2px 8px rgba(6, 229, 159, 0.993);
+}
+
+
+/* Abaixo, configurando a faixa abaixo da sindica Nome e contato */
+
+#divider {
+  position: relative;
+  top: 73%;
+  left: 500px;
+  right: 0;
+  height: 4px;
+  background-color: black;
+  width: 60%;
+}
+
+
+/* Configurar o a foto do Conselheiro Fiscal */
+
+.GfotoConsFiscal {
+
+  margin-left: 3%;
+  border-radius: 5px;
+  display: flexbox;
+  margin-top: 100px;
+  
+}
+
+ /* Configurando Titulo do Conselheiro Fiscal */
+
+.GconselheiroFiscal {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  margin-bottom: -8px;
+  margin-left: 14%;
+  margin-top: -160px;
+  /* word-spacing: px; */
+}
+
+
+/* Configurando a Caixa Texto Nome Conselheiro Fiscal */
+.info {
+  display: flexbox;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 13%;
+  padding: 10px;
+  border: 1px solid rgb(138, 135, 135);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin-left: 14%;
+  margin-top: 20px;
+  background-image: linear-gradient(rgba(187, 189, 187, 0.521), rgba(219, 222, 222, 0.119)), url('imagem.jpg');
+  border: 3px solid rgb(190, 189, 189);
+  box-shadow: 4px 2px 4px gray;
+ }
+
+
+/* Configurar o a foto do Conselheiro Consultivo 1 */
+
+.GfotoConsConsultivo1 {
+
+  margin-left: 37%;
+  border-radius: 5px;
+  display: flexbox;
+  margin-top: -17%;
+  
+}
+
+
+
+ /* Configurando Titulo do Conselheiro consultivo 1 */
+
+ .GconselheiroConsultivo1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  margin-bottom: -8px;
+  margin-left: 47%;
+  margin-top: -150px;
+  word-spacing: 5px;
+}
+
+
+/* Configurando a Caixa Texto Nome Conselheiro consultivo 1 */
+.GinfoConsultivo{
+  display: flexbox;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 13%;
+  padding: 10px;
+  border: 1px solid rgb(138, 135, 135);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin-left: 47%;
+  margin-top: 20px;
+  background-image: linear-gradient(rgba(187, 189, 187, 0.521), rgba(219, 222, 222, 0.119)), url('imagem.jpg');
+  border: 3px solid rgb(190, 189, 189);
+  box-shadow: 4px 2px 4px gray;
+ }
+
+
+/* Configurar o a foto do Conselheiro Consultivo 2*/
+
+.GfotoConsConsultivo2 {
+
+  margin-left: 69%;
+  border-radius: 5px;
+  display: flexbox;
+  margin-top: -249px;
+  
+}
+
+
+ /* Configurando Titulo do Conselheiro consultivo 2 */
+
+ .GconselheiroConsultivo2{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  margin-bottom: -8px;
+  margin-left: 80%;
+  margin-top: -10%;
+  word-spacing: 5px;
+}
+
+
+/* Configurando a Caixa Texto Nome Conselheiro consultivo 2 */
+.GinfoConsultivo2{
+  display: flexbox;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 13%;
+  padding: 10px;
+  border: 1px solid rgb(138, 135, 135);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin-left: 80%;
+  margin-top: 20px;
+  background-image: linear-gradient(rgba(187, 189, 187, 0.521), rgba(219, 222, 222, 0.119)), url('imagem.jpg');
+  border: 3px solid rgb(190, 189, 189);
+  box-shadow: 4px 2px 4px gray;
+ }
+
+
+ /* Configurando traço divisão 2 */
+ #divider2 {
+  position: relative;
+  top: 115%;
+  right: 60%;
+  left: 0;
+  margin-bottom: 30px;
+  height: 4px;
+  background-color: black;
+  width: 60%;
+  margin-left: 3%;
+}
+
+/* Configurando Titulo do Subsíndicos */
+
+.TituloSubsindicos{
+  margin: 4%;
+  margin-top: -6%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+
+
+/* Configurando container das imagens */
+
+
+/* ATENÇÃO  -  Estes códigos abaixo, farão as imagens girar 360º para dar uma efeito diferenciado caso queira utilizar*/
+
+/* .image {
+  transition: transform 0.5s ease;
+}
+
+.image:hover {
+  transform: rotate(360deg);
+} */
+
+
+/* O efeito abaixo, é de uma imagem pulando ao passar o mouse sobre ela, com isso, faz com que a imagem aumente significativamente quando o mouse passa sobre ela */
+
+.image {
+  transition: transform 0.2s ease-in-out;
+}
+
+.image:hover {
+  transform: scale(1.2);
+}
+
+
+
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border-collapse: collapse;
+   
+  
+  
+  }
+  
+  .image {
+    position: relative;
+    width: 20%; /* Ajuste o valor de acordo com a quantidade de imagens por linha */
+    
+  }
+  
+  .image img {
+    /* width: 100%; */
+    width: 150px;
+    height: 150px;
+    border-radius: 5%;
+    margin: 20%;
+    margin-top: -3%;
+    border: 3px solid rgb(190, 189, 189);
+    box-shadow: 4px 2px 4px gray;
+ 
+
+  }
+  
+  .overlay {
+    position: absolute;
+    top: -4.6%;
+    left: 19.9%;
+    width: 151px;
+    height: 151px;
+    background-color: rgb(61, 250, 4);
+    background-image: linear-gradient(rgba(42, 243, 7, 0.982), rgba(220, 242, 248, 0.993));
+    box-shadow: 0 0 18px green;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+
+    justify-content: center;
+    border-radius: 5%;
+    opacity: 0;
+    font-size: 15px;
+    line-height:30px;
+    color: #000000;
+  }
+  
+  .image:hover .overlay {
+    opacity: 1;
+  }
+
+
+   /* Configurando traço divisão 3 fim imagens */
+ #divider3 {
+  position: relative;
+  top: 193%;
+  left: 500px;
+  right: 0;
+  margin-bottom: 30px;
+  height: 4px;
+  background-color: black;
+  width: 60%;
+}
+
+
+/* Configurar o a foto do Zelador */
+
+.GfotoZelador {
+
+  margin-left: 27%;
+  border-radius: 5px;
+  display: flexbox;
+  margin-top: -3%;
+  
+}
+
+
+ /* Configurando Titulo do Zelador */
+
+ .GZelador{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  margin-bottom: -8px;
+  margin-left: 40%;
+  margin-top: -150px;
+  word-spacing: 5px;
+}
+
+
+/* Configurando a Caixa Texto Nome Zelador */
+.GinfoZelador{
+  display: flexbox;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 13%;
+  padding: 10px;
+  border: 1px solid rgb(138, 135, 135);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin-left: 40%;
+  margin-top: 20px;
+  background-image: linear-gradient(rgba(187, 189, 187, 0.521), rgba(219, 222, 222, 0.119)), url('imagem.jpg');
+  border: 3px solid rgb(190, 189, 189);
+  box-shadow: 4px 2px 4px gray;
+ }
+
+
+ /* Configurar o a foto do Assistente Zelador*/
+
+.GfotoAssistenteZelador {
+
+  margin-left: 69%;
+  border-radius: 5px;
+  display: flexbox;
+  margin-top: -9%;
+  
+}
+
+
+ /* Configurando Titulo do Assistente Zelador */
+
+ .GassistenteZelador{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  margin-bottom: -8px;
+  margin-left: 80%;
+  margin-top: -150px;
+  word-spacing: 5px;
+}
+
+
+/* Configurando a Caixa Texto Nome Assitente Zelador */
+.GinfoAssistenteZelador{
+  display: flexbox;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 13%;
+  padding: 10px;
+  border: 1px solid rgb(138, 135, 135);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin-left: 80%;
+  margin-top: 20px;
+  background-image: linear-gradient(rgba(187, 189, 187, 0.521), rgba(219, 222, 222, 0.119)), url('imagem.jpg');
+  border: 3px solid rgb(190, 189, 189);
+  box-shadow: 4px 2px 4px gray;
+ }
+
+
+
+
+/* FINAL PAGINHA GESTÃO */
+
+
+
+
+/* INICIO PAGINHA ADM */
+
+.a_container{
+  padding: 10PX;
+  display: grid;
+  place-items: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.a-tam{
+  font-size: 35px;
+}
+ 
+.a_texto1{
+  margin-top: 170px;
+  padding: 20PX;
+  box-shadow: 0px 4px 10px 3px #38b8e3;
+  width: 1350px;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ 
+.aprincipal{
+  margin-top: 100px;
+  display: flex;
+}
+ 
+.asecundaria{
+  margin-top: 30px;
+  display: flex;
+}
+ 
+.atexto1{
+  margin-left: 7%;
+}
+ 
+.atexto2{
+  margin-right: 9%;
+}
+ 
+.aatendimento{
+  margin-left: 130px;
+  font-size: 35px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+ 
+.aatendimento2{
+  margin-left: 70px;
+  font-size: 35px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+ 
+.aparagrafo1{
+  width: 80%;
+  margin-left: 110px;
+  margin-right: 80px;
+  margin-top: 50px;
+  font-family: Georgia, 'Times New Roman', Times, serif ;
+  border-radius: 25px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px 3px #38b8e3;;
+  display: flex;
+}
+ 
+.aparagrafo2{
+  width: 86%;
+  margin-left: 40px;
+  margin-right: 80px;
+  margin-top: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif ;
+  border-radius: 25px;
+   
+  padding: 20px;
+  box-shadow:0px 4px 10px 3px #38b8e3;;
+  display: flex;
+}
+ 
+.aimagem1{
+  width: 40%;
+  height: 350px;
+  margin-bottom: 3%;
+  border-radius: 50px;
+  box-shadow: 3px 3px 3px 3px grey;
+  display: flex;
+}
+ 
+.aimagem2{
+  width: 40%;
+  height: 350px;
+  margin-left: 13%;
+  margin-bottom: 5%;
+  border-radius: 50px;
+  box-shadow: 3px 3px 3px 3px grey;
+  display: flex;
+}
+ 
+.ah{
+  margin: top 1px; ;
+  margin-left: 10px ;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ 
+h2{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ 
+h3{
+  margin-left: 100px;
+}
+ 
+.a_texto2{
+  margin-left: 150px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ 
+.a_texto3{
+  display: flex;
+  margin-bottom: 35px;
+  margin-left: 100px;
+}
+ 
+.a_texto4{
+  margin-right: 80px;
+  align-items: center;
+  justify-content: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ 
+.a_texto5{
+  margin-right: 80px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+ 
+.a_texto6{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ 
+ 
+.a_p1{
+  box-shadow:0px 0px 20px 0px gray;
+  width: 400px;
+  height: 160px;
+  text-align: center;
+  border-radius: 10px 10px 10px 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ 
+ 
+.a_p2{
+  box-shadow:0px 0px 20px 0px gray;
+  width: 400px;
+  height: 160px;
+  text-align: center;
+  border-radius: 10px 10px 10px 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ 
+ 
+.a_p3{
+  box-shadow:0px 0px 20px 0px gray;
+  width: 400px;
+  height: 160px;
+  text-align: center;
+  border-radius: 10px 10px 10px 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ 
+
+/* FINAL PAGINHA ADM */
+
+
+
+
+/* INICIO PAGINHA DOCU */
+
+.d-caixa {
+  padding: 10PX;
+  display: grid;
+  place-items: center;
+}
+
+.d-txt1 {
+  margin-top: 170px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px 3px #38b8e3;
+  width: 750px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.d-center {
+  margin: 50px;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.d-center p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: black;
+}
+
+.d-foto {
+  border-radius: 5px;
+
+
+}
+
+.d-foto-edit {
+  border-radius: 20px;
+
+}
+
+.d-txt {
+  border: 1px solid black;
+  box-shadow: 0px -1px 1px;
+  width: 370px;
+  height: 140px;
+  border-radius: 5px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 5px;
+
+}
+
+.d-borda {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+  gap: 150px;
+  flex-wrap: wrap;
+}
+
+/* FINAL PAGINHA DOCU */
+
+
+
+/* INICIO PAGINHA PROJ */
+
+.p-titulo {
+  margin-top: 170px;
+  text-align: center;
+  font-size: 40px;
+}
+ 
+.p-container {
+  margin-top: 30px;
+  width: 100%;
+  height: 60%;
+  padding: 10px;
+  display: grid;
+  place-items: center;
+}
+ 
+.p-caixa {
+  box-shadow: 0px 1px 4px 0px #05D3F8;
+  width: 40%;
+  padding: 10px;
+  text-align: center;
+ 
+}
+ 
+.p-text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+ 
+}
+/* estilização da caixa 1 */
+.p-container1 {
+  margin-top: 50px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  gap: 5px;
+}
+ 
+.p-caixa0{
+  border: 1px solid white;
+  box-shadow: 0px 3px 5px 2px gray;
+  width: 20%;
+  height: 50px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: gray;
+  padding: 10px;
+}
+ 
+.p-caixa01{
+  border: 1px solid black;
+  background-color: white(249, 247, 247);
+  text-align: center;
+  padding: 10px;
+  width: 20%;
+  height: 50px;
+  border-radius: 10px;
+ 
+}
+ 
+/* estilização da caixa 2 */
+.p-container2 {
+  margin-top: 50px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  gap: 5px;
+}
+ 
+.p-caixa02{
+  border: 1px solid white;
+  box-shadow: 0px 3px 5px 2px gray;
+  width: 20%;
+  height: 50px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: rgb(72, 227, 165);
+  padding: 10px;
+ 
+}
+ 
+.p-caixa03{
+ border: 1px solid black;
+  background-color: white(249, 247, 247);
+  text-align: center;
+  padding: 10px;
+  width: 20%;
+  height: 50px;
+  border-radius: 10px;
+}
+ 
+/* estilização da caixa 3 */
+.p-container3 {
+  margin-top: 50px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  gap: 5px;
+}
+ 
+.p-caixa04{
+  border: 1px solid white;
+  box-shadow: 0px 3px 5px 2px red;
+  width: 20%;
+  height: 50px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: orange;
+  padding: 10px;
+ 
+}
+ 
+.p-caixa05{
+ border: 1px solid black;
+  background-color: white(249, 247, 247);
+  text-align: center;
+  padding: 10px;
+  width: 20%;
+  height: 50px;
+  border-radius: 10px;
+}
+ 
+/* estilização da caixa 4 */
+.p-container4 {
+  margin-top: 50px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  gap: 5px;
+}
+ 
+.p-caixa06{
+  border: 1px solid white;
+  box-shadow: 0px 3px 5px 2px gray;
+  width: 20%;
+  height: 50px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: rgb(14, 240, 74);
+  padding: 10px;
+ 
+}
+ 
+.p-caixa07{
+ border: 1px solid black;
+  background-color: white(249, 247, 247);
+  text-align: center;
+  padding: 10px;
+  width: 20%;
+  height: 50px;
+  border-radius: 10px;
+}
+ 
+ 
+/* FINAL PAGINHA PROJ */
+
+
+
+/* INICIO PAGINHA SERV*/
+.s-emergencia {
+  margin-top: 170px;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 10px 2px 3px 5px #38b8e3;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.s-tam{
+  font-size: 40px;
+}
+
+.s-img4 {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  flex-wrap: wrap;
+}
+
+.s-img-edit- {
+  border-radius: 350px;
+  
+}
+
+.s-img04 {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+
+/* INICIO DA ESTILIZAÇÃO DOS NÚMEROS DAS LOGO */
+
+.s-num1{
+  background-color: rgb(142, 0, 0);
+  border: 3px solid rgb(142, 0, 0);
+  color: white;
+  border-radius: 20PX;
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.s-img-edit-1{
+  border-radius: 300px;
+  border: 2px solid rgb(142, 0, 0);
+  box-shadow: 0px 0px 6px 3px rgb(142, 0, 0);;
+}
+
+.s-num2{
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.s-img-edit-2{
+  border-radius: 300px;
+  border: 2px solid black;
+  box-shadow: 0px 0px 6px 3px black;
+}
+
+.s-num3{
+  background-color: rgb(39, 123, 144);
+  border: 3px solid rgb(39, 123, 144);
+  color: white;
+  border-radius: 20px;
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.s-img-edit-3{
+  border-radius: 300px;
+  border: 2px solid rgb(39, 123, 144);
+  box-shadow: 0px 0px 6px 3px rgb(39, 123, 144);
+}
+
+.s-num4{
+  background-color: rgb(255, 89, 0);
+  border: 3px solid rgb(255, 89, 0);
+  color: white;
+  border-radius: 20px;
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.s-img-edit-4{
+  border-radius: 300px;
+  border: 2px solid rgb(255, 89, 0);
+  box-shadow: 0px 0px 6px 3px rgb(255, 89, 0);
+}
+
+.s-num5{
+  background-color: rgb(144, 1, 132);
+  border: 3px solid rgb(144, 1, 132);
+  color: white;
+  border-radius: 20px;
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.s-img-edit-5{
+  border-radius: 300px;
+  border: 2px solid rgb(144, 1, 132);
+  box-shadow: 0px 0px 6px 3px rgb(144, 1, 132);
+}
+
+.s-num6{
+  background-color: rgb(4, 121, 70);
+  border: 3px solid rgb(4, 121, 70);
+  color: white;
+  border-radius: 20px;
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.s-img-edit-6{
+  border-radius: 300px;
+  border: 2px solid rgb(4, 121, 70);
+  box-shadow: 0px 0px 6px 3px rgb(4, 121, 70);
+}
+
+.s-num7{
+  background-color: rgba(29, 204, 17, 0.787);
+  border: 2px solid rgba(29, 204, 17, 0.787);
+  border-radius: 20px;
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.s-img-edit-7{
+  border-radius: 300px;
+  border: 3px solid rgba(29, 204, 17, 0.787);
+  box-shadow: 0px 0px 6px 3px rgba(29, 204, 17, 0.787);
+}
+
+.s-num8{
+  background-color: rgb(17, 0, 255);
+  border: 3px solid rgb(17, 0, 255);
+  color: white;
+  border-radius: 20px;
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.s-img-edit-8{
+  border-radius: 300px;
+  border: 3px solid rgb(17, 0, 255);
+  box-shadow: 0px 0px 6px 3px rgb(17, 0, 255);
+}
+
+
+
+/* FIM DA ESTILIZAÇÃO DOS NÚMEROS DAS LOGO */
+
+
+.s-ajuda {
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 10px 2px 3px 5px #38b8e3;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.s-img3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+  gap: 150px;
+  flex-wrap: wrap;
+}
+/* FINAL PAGINHA SERV*/
+
+
+
+
+/* INICIO PAGINHA COMER*/
+.c-section1{
+  margin-top: 170px;
+}
+
+.c-tam{
+  font-size: 40px;
+}
+ 
+h1{
+  padding: 10px;
+  font-size: 60px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 1px 5px 7px #05D3F8;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+ 
+.c-container1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 170px;
+  flex-wrap: wrap;
+}
+ 
+.c-texto{
+  border: 3px solid black;
+  height: 150px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  padding: 20px;
+}
+ 
+img{
+  border-radius: 20px;
+}
+/* FINAL PAGINHA COMER */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* INICIO DA EDIÇÃO PARA BOTÃO DE VOLTAR AO TOPO */
+.btn-voltarTopo{
+ 
+margin-bottom: 10px;
+  margin-left: 1850px;
+}
+.material-symbols-outlined{
+width: 30px;
+height: 30px;
+
+
+}
+
+
+
+
+
+
+/* FIM DA EDIÇÃO PARA BOTÃO DE VOLTAR AO TOPO */
+
+
+/* INICIO DO FOOTER */
+
+footer{
+  background:  #05D3F8;
+  width: 100%;
+}
+ 
+.footerPrinc {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  padding: 10px;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+ 
+.footer_ender {
+  padding: 5px;
+}
+ 
+ 
+.footer_caixa{
+  background: #087A8F;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+ 
+.footer_text2{
+  width: 700px;
+  color: #FEF9F9;
+  text-align: center;
+  font-family: Switzerland;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+ 
+p {
+  font-size: 20px;
+  word-spacing: 10px;
+}
+footer{
+  background:  #05D3F8;
+  width: 100%;
+}
+ 
+.footerPrinc {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  padding: 10px;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+ 
+.footer_ender {
+  padding: 5px;
+}
+ 
+ 
+.footer_caixa{
+  background: #087A8F;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+ 
+.footer_text2{
+  width: 700px;
+  color: #FEF9F9;
+  text-align: center;
+  font-family: Switzerland;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+ 
+p {
+  font-size: 20px;
+  word-spacing: 10px;
+}
+ 
+.image_logo_mapa {
+  border-radius: 50px;
+}
+
+/* FINAL DO FOOTER */
+
+
+
+

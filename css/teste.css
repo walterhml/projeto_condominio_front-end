@@ -1,0 +1,402 @@
+/* Reset de estilos para todos os elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+/* Estilos padrão para o cabeçalho */
+header {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  background: #88d6f1;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.h_a{
+  font-size: 30px;
+}
+
+nav ul li {
+  margin-left: 5px;
+}
+
+a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+li {
+  list-style-type:none;
+}
+
+ul {
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 2px solid #333;
+}
+
+li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border-radius: 8px;
+  padding: 2px 6px;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+/* Menu suspenso para telas maiores */
+/* @media screen and (min-width: 769px) {
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:transparent;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+} */
+
+/* Menu responsivo para telas menores */
+/* @media screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #88d6f1;
+  }
+
+  nav ul li {
+    margin: 0;
+    text-align: center;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .menu-icon:hover {
+    color: #009ddd;
+  }
+
+  .menu-icon.close {
+    display: none;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+} */
+
+/* Estilos para a página Home */
+.h_foto {
+  width: 100%;
+  height: 350px;
+}
+
+.hfoto,
+.hfototerc {
+  /* position: fixed; */
+  width: 100%;
+  height: 350px;
+  margin-bottom: 5%;
+  border-radius: 50px;
+  box-shadow: 0 0.3561rem 0.3561rem #969696c6;
+  
+}
+
+.hsegundas,
+.hterceiras {
+  justify-content: center;
+  margin: 4%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.htexto,
+.hbanner {
+  width: 100%;
+}
+
+.flip_card{
+    /* background-color: transparent; */
+    
+    width: 100%;
+    height: 500px;
+    /* perspective: 1000px; */
+    z-index: 1;
+}
+
+.flip_card_inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip_card:hover .flip_card_inner{
+    transform: rotateY(-180deg);
+}
+
+.flip_card_front, .flip_card_back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 14px;
+    /* background-color: #12121212; */
+
+}
+
+.flip_card_back{
+    transform: rotateY(180deg);
+}
+
+/* Estilos responsivos para a página Home */
+@media screen and (min-width: 600px) {
+
+  .hfoto,
+  .hfototerc,
+  .htexto,
+  .hbanner {
+    width: 48%;
+    margin: 2%;
+  }
+
+  .hsegundas,
+  .hterceiras {
+    margin: 2%;
+  }
+}
+
+.hcontainer00 {
+  border: solid 0.3rem rgba(5, 211, 248, 0.5);
+  box-shadow: inset 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+}
+
+.htitulo_destaque {
+  margin-top: 5%;
+  font-size: 50px;
+  text-align: center;
+}
+
+.hcaixa {
+  width: 80%;
+  max-width: 1200px;
+  height: 33.8rem;
+  background-color: rgba(186, 234, 243, 0.5199999809);
+  margin: 0 auto;
+}
+
+.hcaixa p {
+  text-align: center;
+  margin-top: 10%;
+}
+
+.htexto {
+  padding: 2%;
+  border: none;
+  box-shadow: 0 0.3561rem 0.3561rem #85e6c0;
+  background-color: white;
+}
+
+.htexto p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+
+.h_destaque {
+  background-image: url(../image/-6KU.png);
+  height: 88vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.h_btn {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  color: rgb(6, 200, 6);
+}
+
+.h_btn::after {
+  font-size: 40px;
+  font-weight: bold;
+  background-color: #eee;
+  transition: margin-top 250ms;
+}
+
+.h_btn:hover::after {
+  margin-top: -8px;
+  background-color: #eee;
+}
+
+/* Estilos responsivos para telas maiores na página Home */
+@media screen and (min-width: 800px) {
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+/* Estilos para as demais páginas (Gestão, ADM, Docu, Proj, Serv, Comer) */
+/* Insira seus estilos aqui, começando suas classes com a letra correspondente */
+
+
+
+/* Estilos para o footer */
+footer {
+  background: #05D3F8;
+  width: 100%;
+}
+
+.footerPrinc {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  padding: 10px;
+  gap: 25px;
+}
+
+.footer_ender {
+  padding: 5px;
+}
+
+.footer_caixa {
+  background: #087A8F;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+
+.footer_text2 {
+  width: 700px;
+  color: #FEF9F9;
+  text-align: center;
+  font-family: Switzerland;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 20px;
+  word-spacing: 10px;
+}
+
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #007bff;
+  /* Cor de fundo do botão */
+  color: #fff;
+  /* Cor do ícone */
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #0056b3;
+  /* Cor de fundo do botão ao passar o mouse */
+}
+
+.image_logo_mapa {
+  border-radius: 50px;
+}
+
+/* Adicione estilos para o ícone conforme necessário */
